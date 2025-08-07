@@ -271,82 +271,39 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 20px 10px;
-        gap: 25px;
-        background: rgba(52, 152, 219, 0.8);
-        backdrop-filter: blur(6px);
-        border-radius: 12px;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .img1 {
-        width: 160px;
-        transition: all 0.3s ease;
-        filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+        padding: 20px;
+        gap: 20px;
     }
 
     .head {
         flex-direction: column;
-        align-items: center;
-        gap: 16px;
+        gap: 10px;
     }
 
     .navbar ul {
         flex-direction: column;
-        align-items: center;
-        gap: 14px;
+        gap: 10px;
     }
 
-    .a {
-        font-size: 16px;
-        font-weight: 500;
-        color: #ecf0f1;
-        position: relative;
-    }
-
-    .a::after {
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        left: 50%;
-        width: 0;
-        height: 2px;
-        background-color: #27ae60;
-        transition: all 0.3s ease;
-        transform: translateX(-50%);
-    }
-
-    .a:hover::after {
-        width: 100%;
+    .img1 {
+        width: 180px;
     }
 
     .a .button1,
     .a .button2 {
         width: 100%;
         max-width: 220px;
-        font-size: 15px;
-        padding: 10px 20px;
-        border-radius: 10px;
-        transition: all 0.4s ease;
-    }
-
-    .a .button1:hover,
-    .a .button2:hover {
-        transform: translateY(-3px) scale(1.03);
-        box-shadow: 0 8px 20px rgba(39, 174, 96, 0.3);
+        font-size: 14px;
+        padding: 8px 16px;
     }
 
     .a2 {
         font-size: 15px;
-        text-align: center;
-        color: #ffffffcc;
     }
 
     .banner {
         height: auto;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
         background-position: top;
-        background-size: cover;
-        background-attachment: fixed;
     }
 }
