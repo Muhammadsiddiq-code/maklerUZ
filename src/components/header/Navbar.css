@@ -1,0 +1,352 @@
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #27ae60;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #27ae60;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/images/gsdfg 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.a1{
+    color: #27ae60;
+}
+
+.img1{
+    width: 250px;
+}
+
+.a button{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+
+}
+
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* .a .button1{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+} */
+
+
+
+.a .button1 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 0;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 0 rgba(0, 255, 150, 0);
+}
+
+.a .button1::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 180deg at 50% 50%,
+            #27ae60,
+            #2ecc71,
+            #27ae60);
+    animation: rotate 4s linear infinite;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.a .button1:hover::before {
+    opacity: 0.2;
+}
+
+.a .button1:hover {
+    box-shadow: 0 0 20px rgba(39, 174, 96, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Icon va text harakatlanishi */
+.a .button1 span,
+.a .button1 svg {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.a .button1:hover span,
+.a .button1:hover svg {
+    transform: translateX(3px);
+}
+
+/* Animatsiya aylanishi uchun */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.a .button2 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 0;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);
+}
+
+.a .button2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-25deg);
+    transition: left 0.6s ease;
+    z-index: 1;
+}
+
+.a .button2:hover::before {
+    left: 130%;
+}
+
+.a .button2:hover {
+    box-shadow: 0 6px 25px rgba(46, 204, 113, 0.6);
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+.a2 {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+        font-family: monospace;
+}
+
+.a2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, #260, #2ecc71);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+    border-radius: 2px;
+}
+
+.a2:hover {
+    color: green;
+}
+
+.a2:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+
+
+
+@media (max-width: 425px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 10px;
+        gap: 25px;
+        background: rgba(52, 152, 219, 0.8);
+        backdrop-filter: blur(6px);
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .img1 {
+        width: 160px;
+        transition: all 0.3s ease;
+        filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .a {
+        font-size: 16px;
+        font-weight: 500;
+        color: #ecf0f1;
+        position: relative;
+    }
+
+    .a::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: #27ae60;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    .a:hover::after {
+        width: 100%;
+    }
+
+    .a .button1,
+    .a .button2 {
+        width: 100%;
+        max-width: 220px;
+        font-size: 15px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: all 0.4s ease;
+    }
+
+    .a .button1:hover,
+    .a .button2:hover {
+        transform: translateY(-3px) scale(1.03);
+        box-shadow: 0 8px 20px rgba(39, 174, 96, 0.3);
+    }
+
+    .a2 {
+        font-size: 15px;
+        text-align: center;
+        color: #ffffffcc;
+    }
+
+    .banner {
+        height: auto;
+        padding-bottom: 50px;
+        background-position: top;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
