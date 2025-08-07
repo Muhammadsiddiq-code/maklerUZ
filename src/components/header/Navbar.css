@@ -42,13 +42,36 @@
 
 
 .banner{
-    width: 100%;
+    /* width: 100%;
     height: 100vh;
     background-image: url("../../assets/images/gsdfg 1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+   
+    background: linear-gradient(270deg, #8c9ec0, #d3d927, #565b64, #6a90d2, #000, #260);
+    background-size: 800% 800%;
+    animation: gradientShift 20s ease infinite;
 }
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
 
 .navbar{
     display: flex;
@@ -56,6 +79,7 @@
     justify-content: space-between;
     padding: 0 120px;
 }
+
 
 .navbar ul{
     display: flex;
@@ -266,7 +290,7 @@
 
 
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -306,4 +330,274 @@
         padding-bottom: 40px;
         background-position: top;
     }
+} */
+
+
+
+
+
+
+/* 1024px ↓ planshetlar uchun */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 20px 60px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .head {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .img1 {
+        width: 220px;
+    }
+
+    .main h1 {
+        width: 90%;
+        font-size: 38px;
+    }
+
+    .main p {
+        width: 80%;
+        font-size: 16px;
+    }
 }
+
+
+/* 768px ↓ kichik planshet/katta telefonlar uchun */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 30px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .img1 {
+        width: 180px;
+    }
+
+    .a .button1,
+    .a .button2 {
+        width: 100%;
+        max-width: 220px;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .main h1 {
+        font-size: 32px;
+        padding: 15px;
+    }
+
+    .main p {
+        font-size: 15px;
+    }
+}
+
+
+/* 500px ↓ kichik telefonlar uchun */
+@media (max-width: 500px) {
+    .img1 {
+        width: 160px;
+    }
+
+    .a2 {
+        font-size: 14px;
+    }
+
+    .main h1 {
+        font-size: 26px;
+        padding: 10px 15px;
+    }
+
+    .main p {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+
+/* ✅ 300px ↓ mini telefonlar uchun */
+@media (max-width: 300px) {
+    .navbar {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .img1 {
+        width: 140px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .a .button1,
+    .a .button2 {
+        width: 100%;
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .a2 {
+        font-size: 12px;
+    }
+
+    .main h1 {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    .main p {
+        font-size: 12px;
+        width: 95%;
+    }
+}
+
+
+
+
+/* 1024px ↓ planshetlar uchun */
+@media (max-width: 1024px) {
+    .main h1 {
+        font-size: 42px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .main p {
+        font-size: 18px;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+
+/* 768px ↓ kichik planshetlar / katta telefonlar */
+@media (max-width: 768px) {
+    .main h1 {
+        font-size: 36px;
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .main p {
+        font-size: 16px;
+        width: 85%;
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+
+/* 500px ↓ telefonlar */
+@media (max-width: 500px) {
+    .main h1 {
+        font-size: 28px;
+        width: 95%;
+        padding: 8px;
+        flex-wrap: wrap;
+    }
+
+    .main p {
+        font-size: 14px;
+        width: 90%;
+        padding: 5px;
+    }
+}
+
+
+/* 300px ↓ juda kichik ekranlar */
+@media (max-width: 300px) {
+    .main h1 {
+        font-size: 22px;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .main p {
+        font-size: 12px;
+        width: 100%;
+        padding: 4px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main{
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1{
+    width: 900px;
+    color: #000;
+    font-size: 48px;
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px 25px;
+    font-weight: 400;
+
+
+    background: rgba(255, 255, 255, 0.1);
+        /* yarim shaffof oq */
+        backdrop-filter: blur(10px);
+        /* asosiy effekt */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari uchun */
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main p{
+    width: 700px;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #000;
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 30px;;
+    
+
+    background: rgba(255, 255, 255, 0.1);
+        /* yarim shaffof oq */
+        backdrop-filter: blur(10px);
+        /* asosiy effekt */
+        -webkit-backdrop-filter: blur(10px);
+        /* Safari uchun */
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
